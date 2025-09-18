@@ -1,5 +1,5 @@
-const data=fetch("https://example.com/data").then(response=>response.json()).then(data=>console.log(data))
+const resp=await fetch("https://example.com/data")
 
-
+const data=await resp.json()
 //ben sana bu bocu vedigimde banka borcunu oduyeceksin
-bankaBorcunuOde(data)
+bankaBorcunuOde(resp)
