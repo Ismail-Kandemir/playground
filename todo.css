@@ -1,0 +1,126 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Kapsayıcı kart */
+.container {
+  background: #ffffff;
+  color: #333;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  width: 400px;
+  max-width: 90%;
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input ve ekle butonu */
+input {
+  padding: 10px;
+  width: 70%;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 8px;
+  border: none;
+  background: #667eea;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Görev listesi */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* Sil butonu */
+li button {
+  background: #e53e3e;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #c53030;
+}
+
+/* 🌙 DARK MODE */
+body.dark {
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+  color: #e2e8f0;
+}
+
+body.dark .container {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+body.dark input {
+  background: #1a202c;
+  color: #e2e8f0;
+  border: 2px solid #4a5568;
+}
+
+body.dark button {
+  background: #4c51bf;
+}
+
+body.dark button:hover {
+  background: #434190;
+}
+
+body.dark li {
+  background: #4a5568;
+  color: #f7fafc;
+}
+
+body.dark li button {
+  background: #e53e3e;
+}
+
+body.dark li button:hover {
+  background: #c53030;
+}
+#taskInput {
+  width: calc(100% - 120px);
+  margin-right: 10px;
+  padding: 50px 15px;
+}

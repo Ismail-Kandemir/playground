@@ -1,0 +1,58 @@
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Rastgele Alıntı Üretici</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      text-align: center;
+      width: 400px;
+      max-width: 90%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    #quote {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    #author {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #ff5e62;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e14b50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rastgele Alıntı</h1>
+    <p id="quote">Burada rastgele alıntı görünecek</p>
+    <p id="author">- Yazar</p>
+    <button id="newQuote">Yeni Alıntı</button>
+  </div>
+
+  <script src="quote.js"></script>
+</body>
+</html>

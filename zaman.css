@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#countdown {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background: orangered;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: darkorange;
+}

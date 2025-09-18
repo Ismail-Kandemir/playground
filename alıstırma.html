@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alıştırma</title>
+</head>
+<body>
+    
+<p id="myText">Merhaba, ben gizlenecek yazıyım 👀</p>
+<button id="toggleBtn">Göster / Gizle</button>
+
+
+    <script>
+    const text = document.getElementById("myText");
+const btn = document.getElementById("toggleBtn");
+
+btn.addEventListener("click", () => {
+  if (text.style.display === "none") {
+    text.style.display = "block";  // yazıyı tekrar göster
+  } else {
+    text.style.display = "none";   // yazıyı gizle
+  }
+});
+        
+        
+       
+    </script>
+</body>
+</html>
